@@ -84,7 +84,7 @@ namespace Complete
                             m_TurnInputValue = 0;
                             break;
                         case TouchPhase.Moved:
-                            m_MovementInputValue = (touch.deltaPosition.x) / (Screen.width * 0.15f);
+                            m_MovementInputValue = (touch.deltaPosition.x) / (Screen.width * 0.05f);
                             m_TurnInputValue = (touch.deltaPosition.y) / (Screen.height * 0.09f);
                             break;
                     }

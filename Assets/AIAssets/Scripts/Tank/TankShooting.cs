@@ -71,8 +71,8 @@ namespace Complete
                         m_ShootingAudio.Play();
                         break;
                     case TouchPhase.Stationary:
-
-                        if (!m_Fired)
+                        // no moving
+                        if (!m_Fired && touch.deltaPosition.x == 0)
                         {
                             // Holding the fire button, not yet fired.
                             m_CurrentLaunchForce += m_ChargeSpeed * Time.deltaTime;

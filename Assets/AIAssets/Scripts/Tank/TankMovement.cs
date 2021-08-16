@@ -126,7 +126,7 @@ namespace Complete
         private void FixedUpdate()
         {
             // Adjust the rigidbodies position and orientation in FixedUpdate.
-            if (m_MovementInputValue > m_TurnInputValue)
+            if (Mathf.Abs(m_MovementInputValue) > Mathf.Abs(m_TurnInputValue))
             {
                 Move();
             }
